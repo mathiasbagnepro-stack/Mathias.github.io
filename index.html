@@ -37,6 +37,7 @@
   /* ── Mobile responsive ── */
   @media (max-width:768px) {
     .pm-layout { grid-template-columns:1fr !important; }
+    .hero-grid { grid-template-columns:1fr !important; }
     .nav-links { display:none !important; }
     .pm-portrait { height:min(45vh,280px) !important; }
     .pm-portrait-wrap { -webkit-mask-image:linear-gradient(to bottom,black 60%,transparent 96%) !important; mask-image:linear-gradient(to bottom,black 60%,transparent 96%) !important; -webkit-mask-composite:unset !important; mask-composite:unset !important; }
@@ -75,7 +76,7 @@
 
   <!-- ════════════════ 1. HERO ════════════════ -->
   <section id="top" style="background:radial-gradient(ellipse at 78% 8%, rgba(255,92,2,0.10) 0%, transparent 50%), linear-gradient(170deg,#0B0B0B 0%,#050A1B 70%,#080E2A 100%); color:#FEFAE1; padding:140px 24px 90px;">
-    <div style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:1fr auto; gap:56px; align-items:center;">
+    <div class="hero-grid" style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:1fr auto; gap:56px; align-items:center;">
       <div>
         <div style="display:inline-flex; align-items:center; gap:8px; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#FF5C02; border:1px solid rgba(255,92,2,0.30); padding:6px 12px; border-radius:9999px; margin-bottom:28px;">
           <span style="width:6px; height:6px; background:#FF5C02; border-radius:50%; box-shadow:0 0 10px #FF5C02;"></span>Le copy qui se mesure
