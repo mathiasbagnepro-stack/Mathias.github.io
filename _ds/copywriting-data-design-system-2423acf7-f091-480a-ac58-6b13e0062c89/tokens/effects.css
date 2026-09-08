@@ -1,0 +1,65 @@
+/* =============================================================
+   COPYWRITING DATA — Effects Tokens
+   Shadows, gradients, borders, transitions
+   ============================================================= */
+
+:root {
+  /* ── Gradients ──────────────────────────────────────────────── */
+
+  /* Signature: Noir Profond → Bleu Minuit, vertical */
+  --gradient-signature:
+    linear-gradient(180deg, #0B0B0B 0%, #050A1B 70%, #080E2A 100%); /* @kind other */
+
+  /* Hero: deep black → midnight blue with tangerine glow at bottom */
+  --gradient-hero:
+    radial-gradient(ellipse at 60% 120%, rgba(255,92,2,0.12) 0%, transparent 55%),
+    linear-gradient(180deg, #0B0B0B 0%, #050A1B 60%, #080E2A 100%); /* @kind other */
+
+  /* Accent glow: tangerine radial for hover/active states */
+  --gradient-tangerine-glow:
+    radial-gradient(circle, rgba(255,92,2,0.20) 0%, transparent 70%); /* @kind other */
+
+  /* Surface: subtle depth for cards */
+  --gradient-card:
+    linear-gradient(135deg, #121A34 0%, #0C1228 100%); /* @kind other */
+
+  /* Overlay for images */
+  --gradient-overlay:
+    linear-gradient(180deg, transparent 0%, rgba(5,10,27,0.85) 100%); /* @kind other */
+
+  /* ── Shadows ────────────────────────────────────────────────── */
+  --shadow-sm:
+    0 1px 3px rgba(0,0,0,0.5);
+
+  --shadow-md:
+    0 4px 16px rgba(0,0,0,0.4),
+    0 1px 4px rgba(0,0,0,0.6);
+
+  --shadow-lg:
+    0 8px 32px rgba(0,0,0,0.5),
+    0 2px 8px rgba(0,0,0,0.7);
+
+  --shadow-xl:
+    0 20px 60px rgba(0,0,0,0.6),
+    0 4px 16px rgba(0,0,0,0.8);
+
+  --shadow-accent:
+    0 0 20px rgba(255,92,2,0.25),
+    0 0 60px rgba(255,92,2,0.08);
+
+  --shadow-card:
+    0 2px 12px rgba(0,0,0,0.5),
+    inset 0 1px 0 rgba(254,250,225,0.06);
+
+  /* ── Transitions ────────────────────────────────────────────── */
+  --transition-fast:   150ms ease;                          /* @kind other */
+  --transition-base:   200ms ease;                          /* @kind other */
+  --transition-slow:   350ms ease;                          /* @kind other */
+  --transition-reveal: 500ms cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+
+  /* ── Borders ────────────────────────────────────────────────── */
+  --border-subtle:  1px solid var(--color-cream-08);
+  --border-card:    1px solid var(--color-cream-15);
+  --border-accent:  1px solid var(--color-border-accent);
+  --border-focus:   1px solid var(--color-tangerine);
+}

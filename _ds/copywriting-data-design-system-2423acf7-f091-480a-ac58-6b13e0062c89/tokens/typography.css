@@ -1,0 +1,96 @@
+/* =============================================================
+   COPYWRITING DATA — Typography Tokens
+   Titres : Rajdhani (sans-serif technique, correspond au logo)
+   Corps   : Manrope (sans-serif géométrique, lisibilité)
+   Serif   : Cormorant Garamond (italiques d'accroche, optionnel)
+   Data    : JetBrains Mono (monospace technique)
+   ============================================================= */
+
+:root {
+  /* ── Font Families ──────────────────────────────────────────── */
+  --font-display: 'Rajdhani', 'Arial Narrow', system-ui, sans-serif;
+  --font-serif:   'Cormorant Garamond', 'Palatino Linotype', Georgia, serif;
+  --font-sans:    'Manrope', system-ui, -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Courier New', monospace;
+
+  /* ── Type Scale (Major Third — 1.25×) ──────────────────────── */
+  --text-2xs:  0.625rem;   /* 10px */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.25rem;    /* 20px */
+  --text-2xl:  1.5rem;     /* 24px */
+  --text-3xl:  1.875rem;   /* 30px */
+  --text-4xl:  2.25rem;    /* 36px */
+  --text-5xl:  3rem;       /* 48px */
+  --text-6xl:  3.75rem;    /* 60px */
+  --text-7xl:  4.5rem;     /* 72px */
+  --text-8xl:  6rem;       /* 96px */
+
+  /* ── Font Weights ───────────────────────────────────────────── */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-extrabold: 800;
+
+  /* ── Letter Spacing ─────────────────────────────────────────── */
+  --tracking-tight:   -0.02em;
+  --tracking-normal:   0em;
+  --tracking-wide:     0.05em;
+  --tracking-wider:    0.10em;
+  --tracking-widest:   0.18em;   /* H1 caps */
+  --tracking-display:  0.12em;   /* H1/H2 Rajdhani caps */
+
+  /* ── Line Height ────────────────────────────────────────────── */
+  --leading-none:     1;
+  --leading-tight:    1.1;
+  --leading-snug:     1.3;
+  --leading-normal:   1.5;
+  --leading-relaxed:  1.7;
+
+  /* ── Semantic Type Roles ────────────────────────────────────── */
+  /* H1: Rajdhani 700, CAPS, tracking display */
+  --type-h1-family:     var(--font-display);
+  --type-h1-size:       var(--text-7xl);
+  --type-h1-weight:     var(--weight-bold);
+  --type-h1-tracking:   var(--tracking-display);
+  --type-h1-leading:    var(--leading-tight);
+  --type-h1-transform:  uppercase;
+
+  /* H2: Rajdhani 600, CAPS ou mixed, cream ou tangerine */
+  --type-h2-family:     var(--font-display);
+  --type-h2-size:       var(--text-4xl);
+  --type-h2-weight:     var(--weight-semibold);
+  --type-h2-tracking:   var(--tracking-wide);
+  --type-h2-leading:    var(--leading-snug);
+  --type-h2-transform:  uppercase;
+
+  /* H3: Rajdhani 600, caps, cream */
+  --type-h3-family:     var(--font-display);
+  --type-h3-size:       var(--text-xl);
+  --type-h3-weight:     var(--weight-semibold);
+  --type-h3-tracking:   var(--tracking-wider);
+  --type-h3-leading:    var(--leading-snug);
+  --type-h3-transform:  uppercase;
+
+  /* Body: sans regular, cream-90 */
+  --type-body-family:   var(--font-sans);
+  --type-body-size:     var(--text-base);
+  --type-body-weight:   var(--weight-regular);
+  --type-body-leading:  var(--leading-relaxed);
+
+  /* Caption / label: sans medium, cream-50, tracking wide */
+  --type-label-family:  var(--font-sans);
+  --type-label-size:    var(--text-xs);
+  --type-label-weight:  var(--weight-medium);
+  --type-label-tracking: var(--tracking-wider);
+  --type-label-transform: uppercase;
+
+  /* Data / metric: mono bold, tangerine */
+  --type-data-family:   var(--font-mono);
+  --type-data-size:     var(--text-2xl);
+  --type-data-weight:   var(--weight-bold);
+}

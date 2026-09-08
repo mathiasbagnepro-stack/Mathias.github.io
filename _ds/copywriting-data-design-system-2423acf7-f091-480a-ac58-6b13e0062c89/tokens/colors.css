@@ -1,0 +1,60 @@
+/* =============================================================
+   COPYWRITING DATA — Color Tokens
+   Source of truth: identite_marque_copywriting_data.md §5
+   ============================================================= */
+
+:root {
+  /* ── Base Palette ──────────────────────────────────────────── */
+  --color-deep-black:     #0B0B0B;   /* fond principal */
+  --color-midnight-blue:  #050A1B;   /* fond secondaire, profondeur */
+  --color-tangerine:      #FF5C02;   /* accent unique, CTA, signal */
+  --color-cream:          #FEFAE1;   /* texte, fonds clairs */
+
+  /* ── Surface Hierarchy (midnight blue derivatives) ─────────── */
+  --color-surface-0:      #0B0B0B;   /* canvas / deepest bg */
+  --color-surface-1:      #050A1B;   /* page bg secondary */
+  --color-surface-2:      #0C1228;   /* raised section */
+  --color-surface-3:      #121A34;   /* card bg */
+  --color-surface-4:      #1A2444;   /* elevated card / hover bg */
+
+  /* ── Tangerine Scale ────────────────────────────────────────── */
+  --color-tangerine-hover:   #E65200;
+  --color-tangerine-active:  #CC4900;
+  --color-tangerine-dim:     rgba(255, 92, 2, 0.18);
+  --color-tangerine-ghost:   rgba(255, 92, 2, 0.08);
+
+  /* ── Cream Scale ───────────────────────────────────────────── */
+  --color-cream-100:  #FEFAE1;
+  --color-cream-90:   rgba(254, 250, 225, 0.90);
+  --color-cream-70:   rgba(254, 250, 225, 0.70);
+  --color-cream-60:   rgba(254, 250, 225, 0.60);
+  --color-cream-50:   rgba(254, 250, 225, 0.50);
+  --color-cream-40:   rgba(254, 250, 225, 0.40);
+  --color-cream-30:   rgba(254, 250, 225, 0.30);
+  --color-cream-15:   rgba(254, 250, 225, 0.15);
+  --color-cream-08:   rgba(254, 250, 225, 0.08);
+
+  /* ── Semantic Aliases ──────────────────────────────────────── */
+  --color-bg:           var(--color-deep-black);
+  --color-bg-secondary: var(--color-midnight-blue);
+  --color-bg-card:      var(--color-surface-3);
+  --color-bg-raised:    var(--color-surface-4);
+
+  --color-text:         var(--color-cream-100);
+  --color-text-body:    var(--color-cream-90);
+  --color-text-muted:   var(--color-cream-50);
+  --color-text-dim:     var(--color-cream-30);
+
+  --color-accent:       var(--color-tangerine);
+  --color-accent-hover: var(--color-tangerine-hover);
+  --color-accent-dim:   var(--color-tangerine-dim);
+
+  --color-border:       var(--color-cream-15);
+  --color-border-light: var(--color-cream-08);
+  --color-border-accent: rgba(255, 92, 2, 0.35);
+
+  /* ── Feedback ────────────────────────────────────────────────── */
+  --color-success: #2ECC71;
+  --color-warning: var(--color-tangerine);
+  --color-error:   #E74C3C;
+}
