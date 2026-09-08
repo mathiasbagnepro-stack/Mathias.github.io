@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<template id="__bundler_thumbnail" data-bg-color="#0B0B0B">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0B0B0B"/>
+    <g transform="translate(600 360)" stroke="#FF5C02" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="-150,90 -70,-30 10,40 150,-110"/>
+      <circle cx="150" cy="-110" r="18" fill="#FF5C02" stroke="none"/>
+    </g>
+    <text x="600" y="560" text-anchor="middle" font-family="Rajdhani, sans-serif" font-weight="700" font-size="64" letter-spacing="8" fill="#FEFAE1">COPYWRITING<tspan fill="#FF5C02">DATA</tspan></text>
+  </svg>
+</template>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/copywriting-data-design-system-2423acf7-f091-480a-ac58-6b13e0062c89/fonts/fonts.css">
+<link rel="stylesheet" href="_ds/copywriting-data-design-system-2423acf7-f091-480a-ac58-6b13e0062c89/tokens/colors.css">
+<link rel="stylesheet" href="_ds/copywriting-data-design-system-2423acf7-f091-480a-ac58-6b13e0062c89/tokens/typography.css">
+<link rel="stylesheet" href="_ds/copywriting-data-design-system-2423acf7-f091-480a-ac58-6b13e0062c89/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/copywriting-data-design-system-2423acf7-f091-480a-ac58-6b13e0062c89/tokens/effects.css">
+<link rel="stylesheet" href="_ds/copywriting-data-design-system-2423acf7-f091-480a-ac58-6b13e0062c89/styles.css">
+<script src="_ds/copywriting-data-design-system-2423acf7-f091-480a-ac58-6b13e0062c89/_ds_bundle.js"></script>
+<script src="image-slot.js"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #0B0B0B; }
+  ::selection { background: rgba(255,92,2,0.30); color: #FEFAE1; }
+  *, *::before, *::after { box-sizing: border-box; }
+  /* ── Correctif scroll mobile sur images ── */
+  img { touch-action: pan-y; -webkit-user-drag: none; user-select: none; }
+  /* ── Mobile responsive ── */
+  @media (max-width:768px) {
+    .pm-layout { grid-template-columns:1fr !important; }
+    .nav-links { display:none !important; }
+    .pm-portrait { height:min(45vh,280px) !important; }
+    .pm-portrait-wrap { -webkit-mask-image:linear-gradient(to bottom,black 60%,transparent 96%) !important; mask-image:linear-gradient(to bottom,black 60%,transparent 96%) !important; -webkit-mask-composite:unset !important; mask-composite:unset !important; }
+  }
+  @media (max-width:640px) {
+    .nav-brand-text { display:none !important; }
+    .nav-cta { font-size:9px !important; padding:6px 10px !important; letter-spacing:0.02em !important; white-space:nowrap !important; }
+  }
+</style>
+</helmet>
+
+<div style="font-family: 'Manrope',system-ui,sans-serif; background: #FEFAE1; color: #0B0B0B; overflow-x: hidden; position: relative; width: 100%;">
+
+  <!-- ░░ PROGRESS BAR ░░ -->
+  <div style="position:fixed; top:0; left:0; right:0; height:3px; background:rgba(11,11,11,0.06); z-index:300;">
+    <div ref="{{ progressRef }}" style="height:100%; width:0%; background:#FF5C02; box-shadow:0 0 12px rgba(255,92,2,0.5);"></div>
+  </div>
+
+  <!-- ░░ NAV ░░ -->
+  <nav style="position:fixed; top:3px; left:0; right:0; z-index:200; background:rgba(11,11,11,0.88); backdrop-filter:blur(14px); border-bottom:1px solid rgba(254,250,225,0.10);">
+    <div style="max-width:1200px; margin:0 auto; padding:14px 24px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="#top" style="text-decoration:none; display:flex; align-items:center; gap:12px; font-family:'Rajdhani',sans-serif; font-weight:700; font-size:19px; letter-spacing:0.14em;">
+        <image-slot id="nav-logo" style="width:36px; height:36px; flex-shrink:0; display:block;" shape="rounded" radius="6" placeholder="Logo"></image-slot>
+        <span class="nav-brand-text" style="display:flex; align-items:baseline; gap:8px;"><span style="color:#FEFAE1;">COPYWRITING</span><span style="color:#FF5C02;">DATA</span></span>
+      </a>
+      <div style="display:flex; align-items:center; gap:28px;">
+        <div class="nav-links" style="display:flex; gap:24px; font-size:13px; letter-spacing:0.04em;">
+          <a href="#probleme" style="color:rgba(254,250,225,0.65); text-decoration:none;" style-hover="color:#FEFAE1;">Problème</a>
+          <a href="#methode" style="color:rgba(254,250,225,0.65); text-decoration:none;" style-hover="color:#FEFAE1;">Méthode</a>
+          <a href="#preuve" style="color:rgba(254,250,225,0.65); text-decoration:none;" style-hover="color:#FEFAE1;">Preuve</a>
+        </div>
+        <a href="https://calendly.com/mathiasbagne/rdvstrat" class="nav-cta" style="background:#FF5C02; color:#0B0B0B; font-weight:600; font-size:12px; letter-spacing:0.06em; text-transform:uppercase; padding:10px 18px; border-radius:4px; text-decoration:none; white-space:nowrap;" style-hover="background:#E65200;">Faire un diagnostic</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════ 1. HERO ════════════════ -->
+  <section id="top" style="background:radial-gradient(ellipse at 78% 8%, rgba(255,92,2,0.10) 0%, transparent 50%), linear-gradient(170deg,#0B0B0B 0%,#050A1B 70%,#080E2A 100%); color:#FEFAE1; padding:140px 24px 90px;">
+    <div style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:1fr auto; gap:56px; align-items:center;">
+      <div>
+        <div style="display:inline-flex; align-items:center; gap:8px; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#FF5C02; border:1px solid rgba(255,92,2,0.30); padding:6px 12px; border-radius:9999px; margin-bottom:28px;">
+          <span style="width:6px; height:6px; background:#FF5C02; border-radius:50%; box-shadow:0 0 10px #FF5C02;"></span>Le copy qui se mesure
+        </div>
+        <h1 style="font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; line-height:1.04; font-size:clamp(34px,5vw,58px); margin:0 0 26px;">
+          Vos coûts d'acquisition s'envolent ?<br>
+          <span style="color: rgba(254, 250, 225, 0.55); position: relative;">OBTENEZ JUSQU'À</span>
+          <span style="display: inline-flex; align-items: baseline; color: rgb(255, 92, 2); font-family: &quot;JetBrains Mono&quot;, monospace; letter-spacing: -0.02em;">35%</span>
+          <span style="color: rgba(254, 250, 225, 0.55);">DE revenus en plus grâce à votre liste email<br><a href="https://calendly.com/mathiasbagne/rdvstrat" class="scp1" style="background: rgb(255, 92, 2); color: rgb(11, 11, 11); font-weight: 700; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; padding: 12px 22px; border-radius: 5px; text-decoration: none; white-space: nowrap; flex-shrink: 0; font-family: Manrope, system-ui, sans-serif;">FAIRE UN DIAGNOSTIC</a></span>
+        </h1>
+        <div style="display:flex; margin:0 0 24px;"><div style="display:inline-flex; align-items:center; gap:10px; font-family:'JetBrains Mono',monospace; font-weight:700; text-transform:uppercase; letter-spacing:0.12em; font-size:13px; border:1px solid rgba(255,92,2,0.30); border-radius:9999px; padding:9px 18px;"><span style="color:#FEFAE1;">DATA</span><span style="color:#FF5C02;">→</span><span style="color:#FEFAE1;">Message</span><span style="color:#FF5C02;">→</span><span style="color:#FF5C02;">Revenu</span></div></div>
+        
+        <div style="display:flex; align-items:center; gap:20px; flex-wrap:wrap;">
+          
+          
+        </div>
+      </div>
+
+      <!-- portrait -->
+      <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px;">
+        <div style="position:relative; width:100%; max-width:300px; -webkit-mask-image:linear-gradient(to bottom, black 50%, transparent 96%); mask-image:linear-gradient(to bottom, black 50%, transparent 96%);">
+          <image-slot id="hero-portrait" style="width:100%; height:375px; display:block;" shape="rounded" radius="12" placeholder="Votre photo"></image-slot>
+        </div>
+        <!-- name badge -->
+        <div style="font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.10em; font-size:22px; color:#FEFAE1;">Mathias Bagne</div><div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#FF5C02; margin-top:5px;">EMAILING · COPYWRITING · PARTENAIRE</div><p style="font-size:18px; line-height:1.6; color:rgba(254,250,225,0.78); max-width:520px; margin:0 0 30px;">Ingénieur devenu Copywriter. Je ne devine pas ce qui convertit, je le mesure : j'analyse les data comportementales de votre audience pour activer le revenu qui dort entre vos lancements.</p><div style="text-align:center;">
+          
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ 2. PROBLÈME ════════════════ -->
+  
+
+  <!-- ════════════════ 3. POURQUOI SI PEU ════════════════ -->
+  
+
+  <!-- ════════════════ 5. CONTRASTE ════════════════ -->
+  
+
+  <!-- ════════════════ 6. MÉTHODE ════════════════ -->
+  <section id="probleme" style="background: #FEFAE1; padding: clamp(64px,8vw,104px) 24px 0; scroll-margin-top: 80px; position: relative">
+    <div style="max-width:1100px; margin:0 auto;">
+      <div style="max-width:760px; margin:0 auto; text-align:center;">
+        <span style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#FF5C02;">LE CONSTAT</span>
+        <h2 style="font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; line-height:1.1; font-size:clamp(28px,4.4vw,44px); margin:16px 0 22px;">POURQUOI VOS LEAD COÛTENT DE + EN + CHER ?</h2>
+        
+      </div>
+
+      <!-- 2 canaux cassés -->
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:24px; margin:48px 0 0;">
+        <div data-reveal="" style="opacity:1; transform:none; transition:all .6s cubic-bezier(.16,1,.3,1); background:#fff; border:1px solid rgba(11,11,11,0.08); border-radius:8px; padding:28px; box-shadow:0 2px 14px rgba(11,11,11,0.05);">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px;">
+            <span style="display:inline-flex; color:#C2543F;"><i data-lucide="trending-up" width="22" height="22" stroke-width="1.6"></i></span>
+            <h3 style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; font-size:19px; margin:0;">Vos ads</h3>
+            <span style="margin-left:auto; font-family:'JetBrains Mono',monospace; font-size:11px; color:#C2543F; background:rgba(194,84,63,0.10); padding:3px 9px; border-radius:9999px;">coût ↑</span>
+          </div>
+          
+          <p style="font-size:15px; line-height:1.6; color:rgba(11,11,11,0.70); margin:0 0 16px;">De plus en plus d'annonceurs se sont mis aux ads avec l'IA. Les enchères montent. La même audience vous coûte deux fois plus qu'il y a un an.<br><br><span style="color:#0B0B0B; font-weight:600;">Résultat : vos coûts par lead ont explosé.</span></p><div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 12px"></div>
+        </div>
+        <div data-reveal="" style="opacity:1; transform:none; transition:all .6s cubic-bezier(.16,1,.3,1) .08s; background:#fff; border:1px solid rgba(11,11,11,0.08); border-radius:8px; padding:28px; box-shadow:0 2px 14px rgba(11,11,11,0.05);">
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:14px;">
+            <span style="display:inline-flex; color:#C2543F;"><i data-lucide="trending-down" width="22" height="22" stroke-width="1.6"></i></span>
+            <h3 style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; font-size:19px; margin:0;">Votre organique</h3>
+            <span style="margin-left:auto; font-family:'JetBrains Mono',monospace; font-size:11px; color:#C2543F; background:rgba(194,84,63,0.10); padding:3px 9px; border-radius:9999px;">reach ↓</span>
+          </div>
+          <p style="font-size: 15px; line-height: 1.6; color: rgba(11,11,11,0.70); margin: 0 0 16px; text-align: left">Les plateformes sont saturées de posts générés à la chaîne avec l'IA. L'attention baisse. Un post qui touchait des dizaines de milliers de personnes en touche aujourd'hui une fraction.<br><br><span style="color:#0B0B0B; font-weight:600;">Résultat : votre reach s'est effondré.</span></p>
+          
+        </div>
+      </div>
+
+      <p style="text-align:center; max-width:680px; margin:40px auto 8px; font-size:19px; line-height:1.7; color:#0B0B0B; font-weight:500;">Vous courrez derrière des gens qui ne vous connaissent pas.<br><br>Alors que vous pouvez toucher des gens qui vous ont lu,&nbsp; vous font confiance et vous ont même déjà acheté (et sans dépendre d'un algorithme qui plus est).</p><div style="margin:48px 0 0;">
+        <p style="text-align:center; font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:#FF5C02; margin:0 0 22px;">Ce que disent les chiffres</p><div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px;">
+          
+          
+          <div style="background:linear-gradient(135deg,#121A34,#0C1228); border:1px solid rgba(254,250,225,0.15); border-top:2px solid #FF5C02; border-radius:8px; padding:28px; box-shadow:inset 0 1px 0 rgba(254,250,225,0.06);">
+            <div style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:clamp(40px,6vw,52px); color:#FF5C02; line-height:1;">98%</div>
+            <p style="font-size:14.5px; line-height:1.6; color:rgba(254,250,225,0.80); margin:18px 0 16px;">Taux de rétention annuel d'Amazon Prime. Plus de 500€ de revenu par client et par an : la plus grande boutique en ligne du monde construit son C.A sur des gens qui ont déjà acheté.</p>
+            <div style="display:flex; align-items:center; gap:12px; border-top:1px solid rgba(254,250,225,0.12); padding-top:14px;">
+              <image-slot id="proof-logo-2" style="width:42px; height:42px; flex-shrink:0; display:block;" shape="rounded" radius="6" placeholder="Logo / photo"></image-slot>
+              <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:rgba(254,250,225,0.45);">Amazon · Rapport annuel</div>
+            </div>
+          </div><div style="background:linear-gradient(135deg,#121A34,#0C1228); border:1px solid rgba(254,250,225,0.15); border-top:2px solid #FF5C02; border-radius:8px; padding:28px; box-shadow:inset 0 1px 0 rgba(254,250,225,0.06); display:flex; flex-direction:column;">
+            <p style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:clamp(21px,2.6vw,26px); line-height:1.3; color:#FEFAE1; margin:0 0 8px;">« Make offers to people who have already bought from you. They're the easiest people to sell to. »</p>
+            <p style="font-size:13.5px; line-height:1.55; color:rgba(254,250,225,0.6); margin:0 0 16px;">Faites des offres aux gens qui vous ont déjà acheté : ce sont les plus faciles à convaincre.</p>
+            <div style="display:flex; align-items:center; gap:12px; border-top:1px solid rgba(254,250,225,0.12); padding-top:14px; margin-top:auto;">
+              <image-slot id="proof-logo-3" style="width:42px; height:42px; flex-shrink:0; display:block;" shape="rounded" radius="6" placeholder="Logo / photo"></image-slot>
+              <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:rgba(254,250,225,0.45);">Alex Hormozi · Acquisition.com · +100M$ de C.A</div>
+            </div>
+          </div><div style="background:linear-gradient(135deg,#121A34,#0C1228); border:1px solid rgba(254,250,225,0.15); border-top:2px solid #FF5C02; border-radius:8px; padding:28px; box-shadow:inset 0 1px 0 rgba(254,250,225,0.06);">
+            
+            <div><br></div><div style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:clamp(40px,6vw,52px); color:#FF5C02; line-height:1;">6 à 7×</div><p style="font-size:14.5px; line-height:1.6; color:rgba(254,250,225,0.80); margin:18px 0 16px;">C'est le coût d'acquisition d'un nouveau client comparé à la fidélisation d'un client existant.</p><div><br></div><p></p>
+            <div style="display:flex; align-items:center; gap:12px; border-top:1px solid rgba(254,250,225,0.12); padding-top:14px;">
+              <image-slot id="proof-logo-1" style="width:42px; height:42px; flex-shrink:0; display:block;" shape="rounded" radius="6" placeholder="Logo / photo"></image-slot>
+              <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:rgba(254,250,225,0.45);">Bain &amp; Company · Harvard Business Review</div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- bande 16% pleine largeur -->
+    <div data-counter="" style="margin-top:64px; background:radial-gradient(ellipse at 50% 130%, rgba(255,92,2,0.18) 0%, transparent 60%), linear-gradient(180deg,#0B0B0B,#050A1B); color:#FEFAE1; padding:clamp(56px,7vw,88px) 24px;">
+      <div style="max-width:900px; margin:0 auto; text-align:center;">
+        <div style="display:flex; align-items:baseline; justify-content:center; line-height:0.9;">
+          <span ref="{{ pctRef }}" style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:clamp(96px,20vw,210px); color:#FF5C02; letter-spacing:-0.03em; text-shadow:0 0 60px rgba(255,92,2,0.35);">35</span>
+          <span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:clamp(40px,7vw,80px); color:#FF5C02;">%</span>
+        </div>
+        <p style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; font-size:clamp(18px,2.4vw,26px); margin:18px 0 10px; color:#FEFAE1;">C'EST CE QUE POURRAIT REPRÉSENTER VOS REVENUS PAR EMAIL</p>
+        <p style="font-size:16px; color:rgba(254,250,225,0.62); max-width:560px; margin:0 auto;">ATTENTION : Il ne s'agit pas de remplacer votre acquisition, les deux marchent ensemble, mais de justement rentabiliser cette acquisition.</p><p style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(254,250,225,0.38); margin-top:24px;">Benchmark observé · secteur infopreneuriat · non garanti</p>
+        
+      </div>
+    </div>
+  </section><section style="background: #FEFAE1; padding: clamp(64px,8vw,104px) 24px; ">
+    <div style="max-width:1080px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:40px;">
+        <span style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#FF5C02;">LA CAUSE</span>
+        <h2 style="font-family: 'Rajdhani',sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.12; font-size: clamp(26px,4vw,44px); margin: 16px auto 14px; max-width: 760px">ALORS POURQUOI CES CHIFFRES NE SONT PAS LES VÔTRES ?</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:24px; position:relative;">
+        <div style="position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); z-index:5; width:64px; height:64px; border-radius:50%; background:#FF5C02; color:#0B0B0B; display:flex; align-items:center; justify-content:center; font-family:'Rajdhani',sans-serif; font-weight:700; font-size:24px; letter-spacing:0.04em; box-shadow:0 0 30px rgba(255,92,2,0.45), 0 0 0 6px #FEFAE1;">VS</div>
+        <!-- intuition (sombre) -->
+        <div style="background:linear-gradient(160deg,#0B0B0B,#050A1B); border:1px solid rgba(254,250,225,0.10); border-radius:10px; padding:32px; display:flex; flex-direction:column;">
+          <h3 style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; font-size:clamp(19px,2.4vw,24px); color:#FEFAE1; margin:0; text-align:center; line-height:1.15;">Que fait votre copywriter intuitif ?</h3>
+          <div style="display:flex; align-items:center; justify-content:center; gap:8px; margin:12px 0 22px; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#D9785F;">
+            <i data-lucide="dices" width="15" height="15" stroke-width="1.7"></i> Au doigt mouillé
+          </div>
+          <image-slot id="cause-photo-intuitif" style="width:100%; height:250px; margin-bottom:22px; display:block" shape="rounded" radius="8" placeholder="Photo"></image-slot>
+          <!-- GRAPH : dents de scie aléatoires -->
+          <div style="flex:1; display:flex; align-items:center;">
+            <svg viewBox="0 0 400 200" style="width:100%; height:auto; display:block;" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Courbe en dents de scie : résultats aléatoires">
+              <g stroke="rgba(254,250,225,0.09)" stroke-width="1">
+                <line x1="0" y1="50" x2="400" y2="50"></line>
+                <line x1="0" y1="100" x2="400" y2="100"></line>
+                <line x1="0" y1="150" x2="400" y2="150"></line>
+              </g>
+              <polyline points="8,150 40,70 64,162 96,52 128,168 160,58 196,142 228,40 260,160 292,88 324,172 356,70 392,150" fill="none" stroke="#D9785F" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"></polyline>
+              <line x1="228" y1="40" x2="228" y2="34" stroke="#FF5C02" stroke-width="1"></line>
+              <circle cx="228" cy="40" r="5" fill="#FF5C02"></circle>
+              <text x="228" y="24" text-anchor="middle" font-family="Manrope,sans-serif" font-size="12.5" font-weight="600" fill="#FEFAE1">Bonne idée</text>
+              <circle cx="260" cy="160" r="5" fill="#C2543F"></circle>
+              <text x="262" y="184" text-anchor="middle" font-family="Manrope,sans-serif" font-size="12.5" font-weight="600" fill="rgba(254,250,225,0.78)">Mauvaise idée</text>
+            </svg>
+          </div>
+          <!-- REVENU -->
+          <div style="margin-top:22px; padding-top:18px; border-top:1px solid rgba(254,250,225,0.12);">
+            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(254,250,225,0.5);">Revenu email estimé</span>
+            <div style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:30px; color:rgba(254,250,225,0.85); margin-top:6px; line-height:1;">2–5%<span style="font-size:15px; color:rgba(254,250,225,0.5);"> du C.A</span></div>
+            <p style="font-size:13.5px; line-height:1.55; color:rgba(254,250,225,0.6); margin:12px 0 0;">Quelques ventes, parfois. Mais aucune compréhension du système — donc aucune prévisibilité.</p>
+          </div>
+        </div><div style="background:#fff; border:1px solid rgba(255,92,2,0.25); border-radius:10px; padding:32px; box-shadow:0 4px 24px rgba(11,11,11,0.06); display:flex; flex-direction:column;">
+          <h3 style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; font-size:clamp(19px,2.4vw,24px); color:var(--color-tangerine); margin:0; text-align:center; line-height:1.15;">Avec le copywriting data</h3>
+          <div style="display:flex; align-items:center; justify-content:center; gap:8px; margin:12px 0 22px; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:#1F8A4C;">
+            <i data-lucide="trending-up" width="15" height="15" stroke-width="1.7"></i> Croissance mesurée
+          </div>
+          
+          <!-- GRAPH : croissance régulière + jalons -->
+          <image-slot id="cause-photo-data" style="width:100%; height:246px; margin-bottom:22px; display:block" shape="rounded" radius="8" placeholder="Photo"></image-slot><div style="flex:1; display:flex; align-items:center;">
+            <svg viewBox="0 0 400 200" style="width:100%; height:auto; display:block;" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Courbe de croissance régulière avec jalons d'obtention de données">
+              <defs>
+                <linearGradient id="dataFill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="rgba(255,92,2,0.20)"></stop>
+                  <stop offset="100%" stop-color="rgba(255,92,2,0)"></stop>
+                </linearGradient>
+              </defs>
+              <g stroke="rgba(11,11,11,0.07)" stroke-width="1">
+                <line x1="0" y1="50" x2="400" y2="50"></line>
+                <line x1="0" y1="100" x2="400" y2="100"></line>
+                <line x1="0" y1="150" x2="400" y2="150"></line>
+              </g>
+              <path d="M8,182 70,173 120,158 175,134 230,100 290,62 330,40 392,18 L392,200 L8,200 Z" fill="url(#dataFill)" stroke="none"></path>
+              <polyline points="8,182 70,173 120,158 175,134 230,100 290,62 330,40 392,18" fill="none" stroke="#FF5C02" stroke-width="2.75" stroke-linejoin="round" stroke-linecap="round"></polyline>
+              <g stroke="rgba(11,11,11,0.28)" stroke-width="1" stroke-dasharray="3 3">
+                <line x1="120" y1="185" x2="120" y2="158"></line>
+                <line x1="230" y1="185" x2="230" y2="100"></line>
+                <line x1="330" y1="185" x2="330" y2="40"></line>
+              </g>
+              <g fill="#FF5C02" stroke="#fff" stroke-width="1.5">
+                <rect x="115" y="153" width="10" height="10" transform="rotate(45 120 158)"></rect>
+                <rect x="225" y="95" width="10" height="10" transform="rotate(45 230 100)"></rect>
+                <rect x="325" y="35" width="10" height="10" transform="rotate(45 330 40)"></rect>
+              </g>
+              <g font-family="'JetBrains Mono',monospace" font-size="8" font-weight="600" fill="rgba(11,11,11,0.55)" letter-spacing="0.02em" text-anchor="middle">
+                <text x="120" y="197">Données 1</text>
+                <text x="230" y="197">Données 2</text>
+                <text x="330" y="197">Données 3</text>
+              </g>
+            </svg>
+          </div>
+          <!-- REVENU -->
+          <div style="margin-top:22px; padding-top:18px; border-top:1px solid rgba(11,11,11,0.08);">
+            <span style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(11,11,11,0.5);">Revenu email potentiel</span>
+            <div style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:30px; color:#FF5C02; margin-top:6px; line-height:1;">jusqu'à 35%<span style="font-size:15px; color:rgba(11,11,11,0.5);"> du C.A</span></div>
+            <p style="font-size:13.5px; line-height:1.55; color:rgba(11,11,11,0.6); margin:12px 0 0;">Chaque jalon de données affine le système : il vend plus à chaque itération.</p>
+          </div>
+        </div>
+        <!-- data (clair) -->
+        
+      </div>
+      <p style="text-align:center; max-width:780px; margin:44px auto 0; font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.03em; font-size:clamp(19px,2.8vw,28px); line-height:1.25; color:#0B0B0B;">L'intuition vend 1 fois. <span style="color: rgb(255, 92, 2);">La data construit un système qui vend 2×, 5×, 10×</span>&nbsp;parce qu'il s'améliore à chaque itération.</p>
+      <div style="display:flex; justify-content:center; margin:34px 0 0;"></div>
+    </div><section style="background: #FEFAE1; padding: clamp(40px,5vw,64px) 24px 16px; ">
+    <div style="max-width:680px; margin:0 auto; display:flex; flex-direction:column; align-items:center; text-align:center; gap:16px;">
+      <image-slot id="hormozi-portrait" style="width:56px; height:56px; flex-shrink:0;" shape="circle" placeholder="Photo"></image-slot>
+      <div>
+        <p style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:clamp(20px,2.6vw,26px); line-height:1.35; color:#0B0B0B; margin:0 0 10px;">« On ne peut pas améliorer ce qu'on ne mesure pas. »</p>
+        <p style="font-size:13.5px; line-height:1.5; color:rgba(11,11,11,0.55); margin:0 0 8px; font-style:italic;">"You cannot improve what you do not measure."</p>
+        <div style="display:flex; align-items:center; justify-content:center; gap:10px; margin-top:12px;">
+          <span style="display:inline-block; width:24px; height:1px; background:#FF5C02;"></span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.10em; text-transform:uppercase; color:#FF5C02;">Alex Hormozi · $100M Offers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section><section id="methode" style="background: #FEFAE1; padding: 28px 24px clamp(64px,8vw,104px); border-top: 1px solid rgba(11,11,11,0.06); scroll-margin-top: 80px; ">
+    <div style="max-width:1140px; margin:0 auto;">
+      <div style="text-align:center; max-width:720px; margin:0 auto 12px;">
+        <span style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#FF5C02;">LE PROCÉDÉ</span>
+        <h2 style="font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; font-size:clamp(28px,4.4vw,44px); margin:16px 0 14px;">COMMENT ÇA MARCHE ?</h2>
+        <p style="font-size:17px; line-height:1.6; color:rgba(11,11,11,0.70); margin:0;">Une liste ne se monétise pas avec plus d'emails. <br>Elle se monétise en exploitant la DATA qu'elle génère.&nbsp;</p>
+        <p></p>
+      </div>
+
+      <div data-reveal="" style="opacity:1; transform:none; transition:all .7s cubic-bezier(.16,1,.3,1); display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:18px; margin:44px 0 0;">
+        <div style="background:#fff; border:1px solid rgba(11,11,11,0.08); border-top:3px solid #FF5C02; border-radius:8px; padding:24px 22px; box-shadow:0 2px 14px rgba(11,11,11,0.05);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:#FF5C02;">Étape 01</span><i data-lucide="search" width="22" height="22" stroke-width="1.5"></i></div>
+          <h3 style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; font-size:17px; margin:0 0 8px;">Diagnostic</h3>
+          <p style="font-size:13.5px; line-height:1.55; color:rgba(11,11,11,0.62); margin:0;">J'analyse liste, séquences, taux et silences entre lancements. <br>Objectif : comprendre où l'argent dort.</p>
+        </div>
+        <div style="background:#fff; border:1px solid rgba(11,11,11,0.08); border-top:3px solid #FF5C02; border-radius:8px; padding:24px 22px; box-shadow:0 2px 14px rgba(11,11,11,0.05);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:#FF5C02;">Étape 02</span><i data-lucide="layers" width="22" height="22" stroke-width="1.5"></i></div>
+          <h3 style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; font-size:17px; margin:0 0 8px;">Segmentation</h3>
+          <p style="font-size:13.5px; line-height:1.55; color:rgba(11,11,11,0.62); margin:0;">Je sépare l'audience par comportement réel : chauds, tièdes, froids, acheteurs, engagés non-acheteurs.</p>
+        </div>
+        <div style="background:#fff; border:1px solid rgba(11,11,11,0.08); border-top:3px solid #FF5C02; border-radius:8px; padding:24px 22px; box-shadow:0 2px 14px rgba(11,11,11,0.05);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:#FF5C02;">Étape 03</span><i data-lucide="filter" width="22" height="22" stroke-width="1.5"></i></div>
+          <h3 style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; font-size:17px; margin:0 0 8px;">Extraction</h3>
+          <p style="font-size:13.5px; line-height:1.55; color:rgba(11,11,11,0.62); margin:0;">J'identifie objections, désirs et déclencheurs dans vos contenus, témoignages et appels et je les aligne avec les mots du marché.</p>
+        </div>
+        <div style="background:#fff; border:1px solid rgba(11,11,11,0.08); border-top:3px solid #FF5C02; border-radius:8px; padding:24px 22px; box-shadow:0 2px 14px rgba(11,11,11,0.05);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:#FF5C02;">Étape 04</span><i data-lucide="zap" width="22" height="22" stroke-width="1.5"></i></div>
+          <h3 style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; font-size:17px; margin:0 0 8px;">Activation</h3>
+          <p style="font-size:13.5px; line-height:1.55; color:rgba(11,11,11,0.62); margin:0;">Je construis les séquences adaptées à chaque segment. <br>Pas une séquence générique : un système.</p>
+        </div>
+        <div style="background:#fff; border:1px solid rgba(11,11,11,0.08); border-top:3px solid #FF5C02; border-radius:8px; padding:24px 22px; box-shadow:0 2px 14px rgba(11,11,11,0.05);">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:14px;"><span style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:13px; color:#FF5C02;">Étape 05</span><i data-lucide="sliders" width="22" height="22" stroke-width="1.5"></i></div>
+          <h3 style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.05em; font-size:17px; margin:0 0 8px;">Optimisation</h3>
+          <p style="font-size:13.5px; line-height:1.55; color:rgba(11,11,11,0.62); margin:0;">Je suis les données : ouvertures, clics, ventes, revenu par abonné. J'améliore avec de la data réelle.</p>
+        </div>
+      </div>
+
+      <div style="margin:28px auto 0; max-width:760px; text-align:center; background:rgba(255,92,2,0.06); border:1px solid rgba(255,92,2,0.20); border-radius:8px; padding:20px 26px;">
+        <p style="margin:0; font-size:15px; line-height:1.55; color:#0B0B0B;">Au centre de tout : <span style="color: rgb(255, 92, 2); font-weight: 600;">le revenu par email</span>.<br>Chaque étape produit de la donnée, ainsi, plus on itère, plus le système vend.</p>
+      </div>
+    </div><section style="background: #FEFAE1; padding: clamp(40px,5vw,64px) 24px; ">
+    <div style="max-width:680px; margin:0 auto; display:flex; flex-direction:column; align-items:center; text-align:center; gap:16px;">
+      <image-slot id="hormozi-portrait-2" style="width:56px; height:56px; flex-shrink:0;" shape="circle" placeholder="Photo"></image-slot>
+      <div>
+        <p style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:clamp(20px,2.6vw,26px); line-height:1.35; color:#0B0B0B; margin:0 0 10px;">« Les meilleures entreprises encaissent simplement de l'argent auprès des mêmes clients, encore et encore. »</p>
+        <p style="font-size:13.5px; line-height:1.5; color:rgba(11,11,11,0.55); margin:0 0 4px; font-style:italic;">"The best businesses simply collect money from the same customers over and over again "</p>
+        <div style="display:flex; align-items:center; justify-content:center; gap:10px; margin-top:12px;">
+          <span style="display: inline-block; width: 24px; height: 1px; background: rgb(255, 92, 2);"></span>
+          <span style="font-family: &quot;JetBrains Mono&quot;, monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgb(255, 92, 2);">ALEX HORMOZI · $100M MONEY MODELS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+
+  <!-- ════ CITATION HORMOZI ════ -->
+  
+
+  <!-- ════════════════ 8. PREUVE ════════════════ -->
+  
+
+  <section id="preuve" style="background:#FEFAE1; padding:clamp(64px,8vw,104px) 24px; scroll-margin-top:80px;">
+    
+  <div style="max-width:920px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:40px;">
+        <span style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#FF5C02;"></span>
+        <h2 style="font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; font-size:clamp(28px,4.4vw,44px); margin:16px 0 0;">Ce que ça donne sur le terrain</h2>
+      </div><div data-reveal="" style="opacity:1; transform:none; transition:all .7s cubic-bezier(.16,1,.3,1); background:#fff; border:1px solid rgba(11,11,11,0.08); border-radius:12px; padding:clamp(26px,4vw,40px); box-shadow:0 8px 40px rgba(11,11,11,0.07);">
+        
+        <!-- En-tête client -->
+        <div style="display:flex; align-items:center; gap:16px; margin-bottom:28px; padding-bottom:22px; border-bottom:1px solid rgba(11,11,11,0.08);">
+          <image-slot id="case-study-portrait" style="width:64px; height:64px; flex-shrink:0;" shape="circle" placeholder="Photo client"></image-slot>
+          <div>
+            <div style="font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; font-size:18px; color:#0B0B0B;">JÉRÉMI • TUTO MIX</div>
+            <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:#FF5C02; margin-top:4px;">Formateur de + de 2 000 DJ · +60 000 abonnés sur YouTube</div>
+          </div>
+        </div>
+
+        <!-- 3 KPI -->
+        
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:28px;">
+          
+            <div style="box-sizing: border-box"><p style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; font-size:13px; color:#FF5C02; margin:0 0 8px;">Contexte</p><p style="font-size:14.5px; line-height:1.6; color:rgba(11,11,11,0.72); margin:0;">Jérémi est DJ &amp; formateur dans la niche du DJing. Il vendait pendant des temps forts, mais pas assez entre les lancements.<br>Sa liste recevait du contenu mais très peu de propositions commerciales structurées.</p></div>
+            
+          
+          <div>
+            <p style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; font-size:13px; color:#FF5C02; margin:0 0 8px;">Intervention</p>
+            <ul style="margin:0; padding-left:18px; font-size:14.5px; line-height:1.7; color:rgba(11,11,11,0.72);">
+              
+              <li>Extractions et analyses des comportements de sa liste</li><li>Segmentation des prospects</li>
+              <li>Rédaction de 3 séquences emails adaptées</li>
+              <li>Activation d'un système de vente continu<div><br></div></li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:16px; margin-bottom:30px;">
+          
+          <div style="background:linear-gradient(135deg,#121A34,#0C1228); border:1px solid rgba(254,250,225,0.12); border-radius:8px; padding:22px;">
+            <div style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:34px; color:#FF5C02; line-height:1;">5 970€</div>
+            <div style="font-size:12px; color:rgba(254,250,225,0.55); margin-top:8px; text-transform:uppercase; letter-spacing:0.06em;">GÉNÉRÉS EN AUTOMATIQUE</div>
+          </div><div style="background:linear-gradient(135deg,#121A34,#0C1228); border:1px solid rgba(254,250,225,0.12); border-radius:8px; padding:22px;">
+            <div style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:34px; color:#FF5C02; line-height:1;">~ 41%</div>
+            <div style="font-size:12px; color:rgba(254,250,225,0.55); margin-top:8px; text-transform:uppercase; letter-spacing:0.06em;">taux d'ouverture</div>
+          </div>
+          <div style="background:linear-gradient(135deg,#121A34,#0C1228); border:1px solid rgba(254,250,225,0.12); border-radius:8px; padding:22px;">
+            <div style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:34px; color:#FF5C02; line-height:1;">Vente en Evergreen&nbsp;</div>
+            <div style="font-size:12px; color:rgba(254,250,225,0.55); margin-top:8px; text-transform:uppercase; letter-spacing:0.06em;">SANS APPEL SUR PRODUIT &gt; 800€</div>
+          </div>
+        </div>
+
+        <div style="margin-top:24px; padding-top:22px; border-top:1px solid rgba(11,11,11,0.08); display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px;">
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <span style="color:#1F8A4C; margin-top:1px;"><i data-lucide="check-circle-2" width="20" height="20" stroke-width="1.7"></i></span>
+            <p style="margin:0; font-size:14.5px; line-height:1.55; color:#0B0B0B;"><span style="font-weight:600;">Ce que ça prouve :</span> un système email mieux pensé crée du revenu sans ajouter un lancement complet.</p>
+          </div>
+          <div style="display:flex; gap:12px; align-items:flex-start;">
+            <span style="color:rgba(11,11,11,0.4); margin-top:1px;"><i data-lucide="info" width="20" height="20" stroke-width="1.7"></i></span>
+            <p style="margin:0; font-size:14.5px; line-height:1.55; color:rgba(11,11,11,0.55);"><span style="font-weight: 600;">Ce que ça ne prouve pas :</span> chaque liste ne générera pas le même revenu. Le potentiel dépend de l'offre, de la confiance, de la taille et de l'engagement de la liste.</p>
+          </div>
+        </div><div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px; margin-top:24px;">
+          
+          
+        </div>
+      </div>
+
+
+    </div><div style="max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; margin-top: 20px; margin-bottom: 20px">
+      <image-slot id="brunson-portrait" style="width:56px; height:56px; flex-shrink:0;" shape="circle" placeholder="Photo"></image-slot>
+      <div>
+        <p style="font-family: 'Cormorant Garamond',serif; font-style: italic; font-size: clamp(20px,2.6vw,26px); line-height: 1.35; color: #0B0B0B; margin: 0 0 10px">« Votre liste e-mail est l'un des actifs les plus précieux de votre entreprise. »</p>
+        <p style="font-size:13.5px; line-height:1.5; color:rgba(11,11,11,0.55); margin:0 0 4px; font-style:italic;">"Your email list is one of the most valuable assets in your business."</p>
+        <div style="display:flex; align-items:center; justify-content:center; gap:10px; margin-top:12px;">
+          <span style="display:inline-block; width:24px; height:1px; background:#FF5C02;"></span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.10em; text-transform:uppercase; color:#FF5C02;">Russell Brunson · Lead Funnels</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ 9. POURQUOI MOI ════════════════ -->
+  <section style="background: #0B0B0B; color: #FEFAE1; padding: clamp(64px,8vw,104px) 24px;">
+    <div style="max-width:1080px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:44px;">
+        
+        <h2 style="font-family: 'Rajdhani',sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; font-size: clamp(28px,4.4vw,44px); margin: 16px 0 0; color: var(--color-tangerine); position: relative">Pourquoi moi ?</h2>
+      </div>
+
+      <!-- photo + chiffres (effet rigueur) -->
+      
+
+      <div class="pm-layout" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; align-items:center; margin-bottom:40px;">
+        
+        <div class="pm-portrait-wrap" style="position:relative; -webkit-mask-image:linear-gradient(to right, black 65%, transparent 100%), linear-gradient(to bottom, black 55%, transparent 94%); mask-image:linear-gradient(to right, black 65%, transparent 100%), linear-gradient(to bottom, black 55%, transparent 94%); -webkit-mask-composite:destination-in; mask-composite:intersect;"><image-slot id="pourquoi-portrait-v2" class="pm-portrait" style="width:100%; height:440px; display:block;" fit="cover" position="center top" shape="rect" radius="0" placeholder="Votre photo" data-dc-dragging="1"></image-slot></div><div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:16px;">
+          <div style="border:1px solid rgba(254,250,225,0.12); border-radius:8px; padding:22px;"><div style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:30px; color:#FF5C02; line-height:1;">+100 A/B Testing</div><div style="font-size:12px; color:rgba(254,250,225,0.55); margin-top:8px; text-transform:uppercase; letter-spacing:0.06em;">TRADUITS EN LEVIERS PSYCHOLOGIQUES</div></div>
+          <div style="border:1px solid rgba(254,250,225,0.12); border-radius:8px; padding:22px;"><div style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:30px; color:#FF5C02; line-height:1;">+20 segments</div><div style="font-size:12px; color:rgba(254,250,225,0.55); margin-top:8px; text-transform:uppercase; letter-spacing:0.06em;">CRÉES &amp; OPTIMISÉS</div></div>
+          <div style="border:1px solid rgba(254,250,225,0.12); border-radius:8px; padding:22px;"><div style="font-family: 'JetBrains Mono',monospace; font-weight: 700; font-size: 30px; color: #FF5C02; line-height: 1">Des milliers&nbsp;<br>d'euros</div><div style="font-size:12px; color:rgba(254,250,225,0.55); margin-top:8px; text-transform:uppercase; letter-spacing:0.06em;">générés en evergreen</div></div><div style="border:1px solid rgba(254,250,225,0.12); border-radius:8px; padding:22px;"><div style="font-family: 'JetBrains Mono',monospace; font-weight: 700; font-size: 30px; color: #FF5C02; line-height: 1">+5 Clients</div><div style="font-size:12px; color:rgba(254,250,225,0.55); margin-top:8px; text-transform:uppercase; letter-spacing:0.06em;">ACCOMPAGNÉS &amp;</div></div>
+          
+        </div>
+      </div><div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px;">
+        <div style="background:linear-gradient(135deg,#121A34,#0C1228); border:1px solid rgba(254,250,225,0.12); border-radius:10px; padding:32px;">
+          
+          <h3 style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; font-size:19px; margin:0 0 12px;">LA RIGUEUR D'UN <span style="color:#FF5C02;">INGÉNIEUR</span></h3>
+          <p style="font-size:14.5px; line-height:1.6; color:rgba(254,250,225,0.72); margin:0;">Avant le copywriting, j'ai été formé à penser comme un ingénieur. Un système se mesure, un problème se diagnostique, une hypothèse se teste. J'applique cette logique au copy pour ne pas écrire au hasard.</p>
+        </div>
+        <div style="background:linear-gradient(135deg,#121A34,#0C1228); border:1px solid rgba(254,250,225,0.12); border-radius:10px; padding:32px;">
+          
+          <h3 style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; font-size:19px; margin:0 0 12px;">LA PASSION DU <span style="color:#FF5C02;">MARKETING</span></h3>
+          <p style="font-size:14.5px; line-height:1.6; color:rgba(254,250,225,0.72); margin:0;">Une séquence seule ne suffit pas. Une page de vente seule non plus. Ce qui compte, c'est le système complet : le bon segment, le bon message, au bon moment, avec la bonne offre.</p>
+        </div>
+        <div style="background:linear-gradient(135deg,#121A34,#0C1228); border:1px solid rgba(254,250,225,0.12); border-radius:10px; padding:32px;">
+          
+          <h3 style="font-family: 'Rajdhani',sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; font-size: 19px; margin: 0 0 12px; margin-bottom: 0px">Pas un simple prestataire,<br></h3>
+          <h3 style="font-family: 'Rajdhani',sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; font-size: 19px; margin: 0 0 12px; color: var(--color-tangerine)">UN PARTENAIRE</h3><p style="font-size:14.5px; line-height:1.6; color:rgba(254,250,225,0.72); margin:0;">Envoyer un google doc et faire l'autruche n'a jamais apporté de résultat.<br>Si on bosse ensemble, je n'écris pas seulement vos textes, je les implémente et les optimise pour aller chercher ces revenus qui dorment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CITATION BRUNSON ════ -->
+  
+
+  
+
+  <!-- ░░ LES RETOURS BRUTS (déplacé après Pourquoi moi) ░░ -->
+  
+
+  <!-- ════════════════ 10b. CALCULATEUR ════════════════ -->
+  <section style="background:#FEFAE1; padding:clamp(64px,8vw,104px) 24px;">
+    <div style="max-width:920px; margin:0 auto;">
+      <div style="margin-top:64px;">
+        <div style="text-align:center; margin-bottom:28px;">
+          <span style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#FF5C02;">Les retours, bruts</span>
+          <h3 style="font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; font-size:clamp(22px,3.2vw,32px); margin:12px 0 0; color:#0B0B0B;">Captures, messages, chiffres mesurés</h3>
+        </div>
+        <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:16px;">
+          
+          
+          <div style="position:relative; aspect-ratio:4/3; border:1px solid rgba(254,250,225,0.12); border-radius:8px; overflow:hidden; background:linear-gradient(135deg,#121A34,#0C1228);">
+            
+            <div style="position:absolute; top:0; left:0; width:20px; height:20px; border-top:2px solid #FF5C02; border-left:2px solid #FF5C02; border-top-left-radius:8px; pointer-events:none;"></div>
+          <image-slot id="pw-a1" style="width:100%; height:100%; display:block;" shape="rect" radius="0" placeholder="Vente générée en automatique"></image-slot></div>
+          
+          <div style="position:relative; aspect-ratio:4/3; border:1px solid rgba(254,250,225,0.12); border-radius:8px; overflow:hidden; background:linear-gradient(135deg,#121A34,#0C1228);">
+            <image-slot id="pw-a2" style="width:100%; height:100%; display:block;" shape="rect" radius="0" placeholder="Preuve / capture"></image-slot>
+            
+          </div>
+          <div style="position:relative; aspect-ratio:4/3; border:1px solid rgba(254,250,225,0.12); border-radius:8px; overflow:hidden; background:linear-gradient(135deg,#121A34,#0C1228);">
+            <image-slot id="pw-a3" style="width:100%; height:100%; display:block;" shape="rect" radius="0" placeholder="Retour client WhatsApp 2"></image-slot>
+            
+          </div>
+          <div style="position:relative; aspect-ratio:4/3; border:1px solid rgba(254,250,225,0.12); border-radius:8px; overflow:hidden; background:linear-gradient(135deg,#121A34,#0C1228);">
+            <image-slot id="pw-a4" style="width:100%; height:100%; display:block;" shape="rect" radius="0" placeholder="Stats campagne email"></image-slot>
+            
+          </div><image-slot id="pw-a6" style="width:100%; height:100%; display:block;" shape="rect" radius="0" placeholder="Preuve / capture"></image-slot>
+          <div style="position:relative; grid-column:span 2; aspect-ratio:5/2; border:1px solid rgba(254,250,225,0.12); border-radius:8px; overflow:hidden; background:linear-gradient(135deg,#121A34,#0C1228);">
+            
+            
+          <image-slot id="pw-a5" style="width:100%; height:100%; display:block;" shape="rect" radius="0" placeholder="Stats / tableau"></image-slot></div>
+          
+          
+          
+          
+          
+        </div>
+        
+      </div>
+    </div><image-slot id="pw-a8" style="width:100%; height:100%; display:block;" shape="rect" radius="0" placeholder="Preuve / capture"></image-slot>
+  </section><section style="background:radial-gradient(ellipse at 50% -10%, rgba(255,92,2,0.10) 0%, transparent 55%), linear-gradient(180deg,#0B0B0B,#050A1B); color:#FEFAE1; padding:clamp(64px,8vw,104px) 24px;">
+    
+  <div style="max-width:960px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:44px;">
+        <span style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#FF5C02;">L'estimation</span>
+        <h2 style="font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; font-size:clamp(28px,4.4vw,44px); margin:16px 0 12px;">COMBIEN VOTRE LISTE PEUT GÉNÉRER ?</h2>
+        <p style="font-size:16px; line-height:1.6; color:rgba(254,250,225,0.65); max-width:560px; margin:0 auto;">Déplacez les curseurs : Le résultat n'est une simulation, pas une projection véridique</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:44px; align-items:center;">
+        <div style="display:flex; flex-direction:column; gap:26px;">
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
+              <label style="font-size:14px; color:rgba(254,250,225,0.8);">Taille de votre liste</label>
+              <span style="font-family:'JetBrains Mono',monospace; font-weight:700; color:#FF5C02; font-size:15px;">{{ listSizeFmt }}</span>
+            </div><input type="range" min="1000" max="50000" step="500" value="{{ listSize }}" onChange="{{ onListSize }}" style="width:100%; accent-color:#FF5C02;">
+            
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
+              <label style="font-size:14px; color:rgba(254,250,225,0.8);">Prix moyen de votre offre</label>
+              <span style="font-family:'JetBrains Mono',monospace; font-weight:700; color:#FF5C02; font-size:15px;">{{ offerPriceFmt }}</span>
+            </div>
+            <input type="range" min="47" max="2000" step="10" value="{{ offerPrice }}" onChange="{{ onOfferPrice }}" style="width:100%; accent-color:#FF5C02;">
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
+              <label style="font-size:14px; color:rgba(254,250,225,0.8);">Taux d'ouverture actuel</label>
+              <span style="font-family:'JetBrains Mono',monospace; font-weight:700; color:#FF5C02; font-size:15px;">{{ openRateFmt }}</span>
+            </div>
+            <input type="range" min="5" max="70" step="1" value="{{ openRate }}" onChange="{{ onOpenRate }}" style="width:100%; accent-color:#FF5C02;">
+          </div>
+          <div>
+            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:10px;">
+              <label style="font-size:14px; color:rgba(254,250,225,0.8);">Niveau d'engagement estimé</label>
+              <span style="font-family:'JetBrains Mono',monospace; font-weight:700; color:#FF5C02; font-size:15px;">{{ engagementFmt }}</span>
+            </div>
+            <input type="range" min="1" max="5" step="1" value="{{ engagement }}" onChange="{{ onEngagement }}" style="width:100%; accent-color:#FF5C02;">
+          </div>
+        </div>
+        <div style="background:rgba(254,250,225,0.04); border:1px solid rgba(255,92,2,0.25); border-radius:12px; padding:34px; text-align:center;">
+          <p style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(254,250,225,0.5); margin:0 0 8px;">Aujourd'hui · entre vos lancements</p>
+          <div style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:clamp(28px,5vw,42px); color:rgba(254,250,225,0.85); line-height:1;">{{ monthlyCurrentFmt }}<span style="font-size:15px; color:rgba(254,250,225,0.5);"> /mois</span></div>
+          <div style="height:1px; background:rgba(254,250,225,0.12); margin:26px 0;"></div>
+          <p style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#FF5C02; margin:0 0 8px;">Potentiel · stratégie Copywriting Data</p>
+          <div style="font-family:'JetBrains Mono',monospace; font-weight:700; font-size:clamp(32px,6vw,52px); color:#FF5C02; line-height:1; text-shadow:0 0 40px rgba(255,92,2,0.35);">{{ monthlyPotentialFmt }}<span style="font-size:17px; color:rgba(255,92,2,0.7);"> /mois</span></div>
+          <p style="font-size:12px; color:rgba(254,250,225,0.45); margin:20px 0 0;">Le réel dépend de l'offre, de la confiance et de l'engagement.</p>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:680px; margin:48px auto 0; display:flex; flex-direction:column; align-items:center; text-align:center; gap:16px;">
+      <image-slot id="brunson-portrait-2" style="width:56px; height:56px; flex-shrink:0;" shape="circle" placeholder="Photo"></image-slot>
+      <div>
+        <p style="font-family:'Cormorant Garamond',serif; font-style:italic; font-size:clamp(20px,2.6vw,26px); line-height:1.35; color:var(--color-cream); margin:0 0 8px;">« L'argent est dans la liste. »</p>
+        <p style="font-size:13.5px; line-height:1.5; color:#fefae18c; margin:0 0 12px; font-style:italic;">"The money is in the list."</p>
+        <div style="display:flex; align-items:center; justify-content:center; gap:10px;">
+          <span style="display:inline-block; width:24px; height:1px; background:#FF5C02;"></span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.10em; text-transform:uppercase; color:#FF5C02;">Russell Brunson · DotCom Secrets</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CITATION BRUNSON 2 ════ -->
+  
+
+  <!-- ════════════════ 10. POUR QUI ════════════════ -->
+  <section style="background:#F4EFDD; padding:clamp(64px,8vw,104px) 24px;">
+    
+    
+  <div style="max-width:980px; margin:0 auto;">
+      <div style="text-align:center; margin-bottom:44px;">
+        <span style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:#FF5C02;"></span>
+        <h2 style="font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; font-size:clamp(26px,4vw,40px); margin:16px 0 0;">EST-CE QUE ÇA VA MARCHER POUR VOUS ?</h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:22px;">
+        <div style="background:#fff; border:1px solid rgba(11,11,11,0.08); border-radius:10px; padding:30px;">
+          <h3 style="font-family: 'Rajdhani',sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; font-size: 17px; margin: 0 0 20px; color: var(--color-tangerine-active)">PROBABLEMENT PAS SI…</h3>
+          <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:14px;">
+            <li style="display:flex; gap:12px; font-size:14.5px; line-height:1.5; color:rgba(11,11,11,0.62);"><span style="color:#C2543F; flex-shrink:0; margin-top:1px;"><i data-lucide="x" width="18" height="18" stroke-width="2.2"></i></span>Vous cherchez juste quelqu'un qui écrit des emails.</li>
+            <li style="display:flex; gap:12px; font-size:14.5px; line-height:1.5; color:rgba(11,11,11,0.62);"><span style="color:#C2543F; flex-shrink:0; margin-top:1px;"><i data-lucide="x" width="18" height="18" stroke-width="2.2"></i></span>Vous voulez une séquence sans donner accès aux données.</li>
+            <li style="display:flex; gap:12px; font-size:14.5px; line-height:1.5; color:rgba(11,11,11,0.62);"><span style="color:#C2543F; flex-shrink:0; margin-top:1px;"><i data-lucide="x" width="18" height="18" stroke-width="2.2"></i></span>Vous ne voulez pas mesurer les résultats.</li>
+            <li style="display:flex; gap:12px; font-size:14.5px; line-height:1.5; color:rgba(11,11,11,0.62);"><span style="color:#C2543F; flex-shrink:0; margin-top:1px;"><i data-lucide="x" width="18" height="18" stroke-width="2.2"></i></span>Vous cherchez une solution magique pour compenser une offre faible.</li>
+            <li style="display:flex; gap:12px; font-size:14.5px; line-height:1.5; color:rgba(11,11,11,0.62);"><span style="color:#C2543F; flex-shrink:0; margin-top:1px;"><i data-lucide="x" width="18" height="18" stroke-width="2.2"></i></span>Vous n'envoyez jamais d'emails à votre liste.</li>
+          </ul>
+        </div>
+        <div style="background:#fff; border:1px solid rgba(255,92,2,0.30); border-radius:10px; padding:30px; box-shadow:0 4px 24px rgba(11,11,11,0.06);">
+          <h3 style="font-family: 'Rajdhani',sans-serif; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; font-size: 17px; margin: 0 0 20px; color: var(--color-success)">IL Y A DE GRANDES CHANCES SI…</h3>
+          <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:14px;">
+            <li style="display:flex; gap:12px; font-size:14.5px; line-height:1.5; color:rgba(11,11,11,0.80);"><span style="color:#1F8A4C; flex-shrink:0; margin-top:1px;"><i data-lucide="check" width="18" height="18" stroke-width="2.2"></i></span>Vous avez déjà une liste email et déjà vendu une offre.</li>
+            <li style="display:flex; gap:12px; font-size:14.5px; line-height:1.5; color:rgba(11,11,11,0.80);"><span style="color:#1F8A4C; flex-shrink:0; margin-top:1px;"><i data-lucide="check" width="18" height="18" stroke-width="2.2"></i></span>Vous dépendez encore trop de vos lancements.</li>
+            <li style="display:flex; gap:12px; font-size:14.5px; line-height:1.5; color:rgba(11,11,11,0.80);"><span style="color:#1F8A4C; flex-shrink:0; margin-top:1px;"><i data-lucide="check" width="18" height="18" stroke-width="2.2"></i></span>Vous avez testé l'evergreen sans résultat clair.</li>
+            <li style="display:flex; gap:12px; font-size:14.5px; line-height:1.5; color:rgba(11,11,11,0.80);"><span style="color:#1F8A4C; flex-shrink:0; margin-top:1px;"><i data-lucide="check" width="18" height="18" stroke-width="2.2"></i></span>Vous voulez comprendre ce que votre audience fait réellement entre deux temps forts.</li>
+            <li style="display:flex; gap:12px; font-size:14.5px; line-height:1.5; color:rgba(11,11,11,0.80);"><span style="color:#1F8A4C; flex-shrink:0; margin-top:1px;"><i data-lucide="check" width="18" height="18" stroke-width="2.2"></i></span>Vous cherchez un partenaire capable de penser système, pas seulement rédaction.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ FAQ OBJECTIONS ════════════════ -->
+  
+
+  <!-- ════════════════ 11. OFFRE ════════════════ -->
+  <section id="diagnostic" style="background:#FEFAE1; padding:clamp(56px,7vw,88px) 24px clamp(64px,8vw,104px); scroll-margin-top:80px;">
+    <div style="max-width:840px; margin:0 auto; text-align:center;">
+      
+      
+    <h2 style="font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; line-height:1.12; font-size:clamp(26px,4vw,40px); margin:16px auto 0; max-width:680px;">ON VÉRIFIE ÇA ?</h2></div>
+
+    <div data-reveal="" style="opacity:1; transform:none; transition:all .7s cubic-bezier(.16,1,.3,1); max-width:840px; margin:40px auto 0; background:radial-gradient(ellipse at 50% 0%, rgba(255,92,2,0.12) 0%, transparent 55%), linear-gradient(165deg,#0B0B0B,#050A1B); border:1px solid rgba(255,92,2,0.25); border-radius:14px; padding:clamp(30px,4vw,48px); color:#FEFAE1; box-shadow:0 24px 70px rgba(0,0,0,0.4);">
+      <div style="display:flex; align-items:center; gap:14px; justify-content:center; margin-bottom:8px;">
+        <span style="color:#FF5C02;"><i data-lucide="clock" width="22" height="22" stroke-width="1.6"></i></span>
+        <span style="font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; font-size:clamp(22px,3vw,30px);">Diagnostic Revenu Dormant · 30 min</span>
+      </div>
+      <p style="text-align:center; font-size:15.5px; line-height:1.6; color:rgba(254,250,225,0.7); max-width:580px; margin:0 auto 32px;">Avant de parler séquence, tunnel ou automatisation : combien vaut réellement votre liste email aujourd'hui ?</p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:24px; text-align:left; margin-bottom:34px;">
+        <div style="background:rgba(254,250,225,0.04); border:1px solid rgba(254,250,225,0.12); border-radius:8px; padding:24px;">
+          <p style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; font-size:13px; color:#FF5C02; margin:0 0 16px;">Pendant l'appel</p>
+          <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
+            <li style="display:flex; gap:10px; font-size:14.5px; line-height:1.5; color:rgba(254,250,225,0.85);"><span style="color: rgb(255, 92, 2); flex-shrink: 0;"><i data-lucide="check" width="17" height="17" stroke-width="2"></i></span>Je vous pose des questions calibrées pour comprendre votre situation business et emailing</li>
+            <li style="display:flex; gap:10px; font-size:14.5px; line-height:1.5; color:rgba(254,250,225,0.85);"><span style="color: rgb(255, 92, 2); flex-shrink: 0;"><i data-lucide="check" width="17" height="17" stroke-width="2"></i></span>Je fais un état des lieux de votre liste : segments, engagement, potentiel</li>
+            
+          </ul>
+        </div>
+        <div style="background:rgba(254,250,225,0.04); border:1px solid rgba(254,250,225,0.12); border-radius:8px; padding:24px;">
+          <p style="font-family:'Rajdhani',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; font-size:13px; color:#FF5C02; margin:0 0 16px;">Vous repartez avec</p>
+          <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:12px;">
+            <li style="display:flex; gap:10px; font-size:14.5px; line-height:1.5; color:rgba(254,250,225,0.85);"><span style="color:#FF5C02; flex-shrink:0;"><i data-lucide="check" width="17" height="17" stroke-width="2"></i></span>Une lecture claire de votre situation et de ce que vous laissez sur la table</li>
+            
+            <li style="display:flex; gap:10px; font-size:14.5px; line-height:1.5; color:rgba(254,250,225,0.85);"><span style="color: rgb(255, 92, 2); flex-shrink: 0;"><i data-lucide="check" width="17" height="17" stroke-width="2"></i></span>SI c'est pertinent, 2-3 leviers prioritaires à activer en premier</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="margin: 0">Je vous fait un retour sincère si il y a un potentiel inexploité ou si je ne suis pas la bonne personne pour résoudre votre problématique</p>
+      <div style="display:flex; justify-content:center; margin:0 0 24px;"></div>
+
+      <div style="text-align:center;">
+        <a href="https://calendly.com/mathiasbagne/rdvstrat" style="display:inline-flex; align-items:center; gap:12px; background:#FF5C02; color:#0B0B0B; font-weight:700; font-size:16px; letter-spacing:0.05em; text-transform:uppercase; padding:20px 40px; border-radius:6px; text-decoration:none; box-shadow:0 0 30px rgba(255,92,2,0.35);" style-hover="background:#E65200; transform:translateY(-2px); box-shadow:0 0 44px rgba(255,92,2,0.5);">Réserver mon diagnostic <i data-lucide="arrow-right" width="20" height="20" stroke-width="2"></i></a>
+        <p style="font-size:13px; color:rgba(254,250,225,0.45); margin:16px 0 0;">Pour coachs et infopreneurs avec une liste email active.</p>
+      </div>
+    </div><div style="display:flex; align-items:center; justify-content:center; gap:16px; margin-top:48px; padding-top:36px; border-top:1px solid rgba(254,250,225,0.12);">
+        <image-slot id="signature-portrait" style="width:60px; height:60px; flex-shrink:0;" shape="circle" placeholder="Photo"></image-slot>
+        <div style="text-align:left;">
+          <div style="font-family:'Rajdhani',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; font-size:17px;">Mathias Bagne</div>
+          <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#FF5C02; margin-top:3px;">MAILING · COPYWRITING · PARTENAIRE</div>
+        </div>
+      </div>
+  </section>
+
+  <!-- ════════════════ 12. CTA FINAL ════════════════ -->
+  
+
+  <!-- ░░ STICKY CTA ░░ -->
+  <div ref="{{ stickyRef }}" style="position:fixed; left:0; right:0; bottom:0; z-index:200; transform:translateY(120%); opacity:0; transition:transform .35s cubic-bezier(.16,1,.3,1), opacity .35s ease; background:rgba(11,11,11,0.94); backdrop-filter:blur(14px); border-top:1px solid rgba(255,92,2,0.3);">
+    
+  </div>
+
+
+
+
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { listSize: 8000, offerPrice: 297, openRate: 35, engagement: 3 };
+  progressRef = React.createRef();
+  stickyRef = React.createRef();
+  pctRef = React.createRef();
+  _iconTries = 0;
+
+  componentDidMount() {
+    this._refreshIcons();
+    this._counted = false;
+    this._reveals = Array.from(document.querySelectorAll('[data-reveal]'));
+    this._band = document.querySelector('[data-counter]');
+
+    this._onScroll = () => {
+      const vh = window.innerHeight;
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - vh;
+      const p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+      if (this.progressRef.current) this.progressRef.current.style.width = (p * 100).toFixed(2) + '%';
+      if (this.stickyRef.current) {
+        const show = window.scrollY > vh * 0.9;
+        this.stickyRef.current.style.transform = show ? 'translateY(0)' : 'translateY(120%)';
+        this.stickyRef.current.style.opacity = show ? '1' : '0';
+      }
+      // rect-based reveal (IntersectionObserver is unreliable in this runtime)
+      if (this._reveals && this._reveals.length) {
+        const trigger = vh * 0.9;
+        this._reveals = this._reveals.filter((el) => {
+          const top = el.getBoundingClientRect().top;
+          if (top < trigger) {
+            el.style.opacity = '1';
+            el.style.transform = 'none';
+            return false;
+          }
+          return true;
+        });
+      }
+      if (!this._counted && this._band) {
+        const top = this._band.getBoundingClientRect().top;
+        if (top < vh * 0.7) { this._counted = true; this._animateCount(); }
+      }
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    window.addEventListener('resize', this._onScroll, { passive: true });
+    // rAF ticker — robust even when programmatic scrolls don't emit 'scroll'
+    this._raf = true;
+    const loop = () => { if (!this._raf) return; this._onScroll(); requestAnimationFrame(loop); };
+    requestAnimationFrame(loop);
+  }
+
+  componentWillUnmount() {
+    this._raf = false;
+    if (this._onScroll) {
+      window.removeEventListener('scroll', this._onScroll);
+      window.removeEventListener('resize', this._onScroll);
+    }
+  }
+
+  _refreshIcons() {
+    if (window.lucide && window.lucide.createIcons) {
+      try { window.lucide.createIcons(); } catch (e) {}
+    } else if (this._iconTries < 25) {
+      this._iconTries++;
+      setTimeout(() => this._refreshIcons(), 200);
+    }
+  }
+
+  _animateCount() {
+    const el = this.pctRef.current;
+    if (!el) return;
+    const start = performance.now();
+    const dur = 1200;
+    const to = 35;
+    const ease = (t) => 1 - Math.pow(1 - t, 3);
+    el.textContent = '0';
+    const tick = (now) => {
+      const t = Math.min(1, (now - start) / dur);
+      el.textContent = String(Math.round(ease(t) * to));
+      if (t < 1) requestAnimationFrame(tick);
+      else el.textContent = String(to);
+    };
+    requestAnimationFrame(tick);
+  }
+
+  toggleAccordion = (e) => {
+    const header = e.currentTarget;
+    const panel = header.nextElementSibling;
+    if (!panel) return;
+    const open = header.getAttribute('data-open') === 'true';
+    panel.style.display = open ? 'none' : 'block';
+    header.setAttribute('data-open', open ? 'false' : 'true');
+    const chev = header.querySelector('[data-chev]');
+    if (chev) chev.style.transform = open ? 'rotate(0deg)' : 'rotate(180deg)';
+  };
+
+  _num(v){ return new Intl.NumberFormat('fr-FR').format(v); }
+  _engLabel(v){ return ['Très faible','Faible','Moyen','Élevé','Très élevé'][v-1] || 'Moyen'; }
+  _eur(v){ return new Intl.NumberFormat('fr-FR',{maximumFractionDigits:0}).format(Math.round(v/10)*10) + '€'; }
+  _calc(){
+    const { listSize, offerPrice, openRate, engagement } = this.state;
+    const engaged = listSize * (openRate/100);
+    const currentRate = 0.0008;
+    const monthlyCurrent = engaged * currentRate * offerPrice;
+    const factor = 1.6 + 0.4 * engagement;
+    const monthlyPotential = engaged * currentRate * factor * offerPrice;
+    return { monthlyCurrent, monthlyPotential };
+  }
+  onRange = (key) => (e) => { this.setState({ [key]: Number(e.target.value) }); };
+
+  renderVals() {
+    const { listSize, offerPrice, openRate, engagement } = this.state;
+    const { monthlyCurrent, monthlyPotential } = this._calc();
+    return {
+      progressRef: this.progressRef,
+      stickyRef: this.stickyRef,
+      pctRef: this.pctRef,
+      toggleAccordion: this.toggleAccordion,
+      listSize, offerPrice, openRate, engagement,
+      listSizeFmt: this._num(listSize) + ' abonnés',
+      offerPriceFmt: this._num(offerPrice) + '€',
+      openRateFmt: openRate + '%',
+      engagementFmt: this._engLabel(engagement),
+      monthlyCurrentFmt: '~' + this._eur(monthlyCurrent),
+      monthlyPotentialFmt: 'jusqu\'à ' + this._eur(monthlyPotential),
+      onListSize: this.onRange('listSize'),
+      onOfferPrice: this.onRange('offerPrice'),
+      onOpenRate: this.onRange('openRate'),
+      onEngagement: this.onRange('engagement'),
+    };
+  }
+}
+</script>
+</body>
+</html>
